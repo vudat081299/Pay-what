@@ -13,7 +13,9 @@ struct ContentView: View {
     @Query private var items: [Item]
 
     var body: some View {
+        LandmarkList()
         
+        /*
         VStack {
             MapView()
                 .frame(height: 300)
@@ -40,6 +42,7 @@ struct ContentView: View {
             .padding()
             Spacer()
         }
+         */
         
         /*
         NavigationSplitView {

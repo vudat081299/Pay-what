@@ -23,12 +23,17 @@ struct LandmarkList: View {
 //        List(landmarks) { landmark in
 //            LandmarkRow(landmark: landmark)
 //        }
-        
+//
 //        v4
         NavigationSplitView {
             List(landmarks) { landmark in
-                LandmarkRow(landmark: landmark)
+                NavigationLink {
+                    LandmarkDetail(landmark: landmark)
+                } label: {
+                    LandmarkRow(landmark: landmark)
+                }
             }
+            .navigationTitle("Landmarks")
         } detail: {
             Text("Select a Landmark")
         }
