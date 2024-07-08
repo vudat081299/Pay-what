@@ -29,6 +29,7 @@
 		84FAEF792C3AF95A00FFAA17 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAEF782C3AF95A00FFAA17 /* LandmarkRow.swift */; };
 		84FAEF7B2C3AFB9000FFAA17 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAEF7A2C3AFB9000FFAA17 /* LandmarkList.swift */; };
 		84FAEF7D2C3AFC3800FFAA17 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAEF7C2C3AFC3800FFAA17 /* LandmarkDetail.swift */; };
+		AF581DEC2C3BD71E00BED03E /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF581DEB2C3BD71E00BED03E /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		84FAEF782C3AF95A00FFAA17 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		84FAEF7A2C3AFB9000FFAA17 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		84FAEF7C2C3AFC3800FFAA17 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		AF581DEB2C3BD71E00BED03E /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,12 +164,9 @@
 		84FAEF762C3AF8FC00FFAA17 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				84FAEF6C2C3AEFF000FFAA17 /* CircleImage.swift */,
-				84FAEF782C3AF95A00FFAA17 /* LandmarkRow.swift */,
-				84FAEF7C2C3AFC3800FFAA17 /* LandmarkDetail.swift */,
-				84FAEF7A2C3AFB9000FFAA17 /* LandmarkList.swift */,
 				84FAEF332C3AA57800FFAA17 /* ContentView.swift */,
-				84FAEF6E2C3AF00D00FFAA17 /* MapView.swift */,
+				AF581DEF2C3BD84E00BED03E /* Helper */,
+				AF581DEE2C3BD7CE00BED03E /* Landmark */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +179,26 @@
 				84FAEF742C3AF8AF00FFAA17 /* ModelData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AF581DEE2C3BD7CE00BED03E /* Landmark */ = {
+			isa = PBXGroup;
+			children = (
+				84FAEF782C3AF95A00FFAA17 /* LandmarkRow.swift */,
+				84FAEF7C2C3AFC3800FFAA17 /* LandmarkDetail.swift */,
+				84FAEF7A2C3AFB9000FFAA17 /* LandmarkList.swift */,
+			);
+			path = Landmark;
+			sourceTree = "<group>";
+		};
+		AF581DEF2C3BD84E00BED03E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				84FAEF6C2C3AEFF000FFAA17 /* CircleImage.swift */,
+				AF581DEB2C3BD71E00BED03E /* FavoriteButton.swift */,
+				84FAEF6E2C3AF00D00FFAA17 /* MapView.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +354,7 @@
 				84FAEF732C3AF84800FFAA17 /* Landmark.swift in Sources */,
 				84FAEF792C3AF95A00FFAA17 /* LandmarkRow.swift in Sources */,
 				84FAEF7D2C3AFC3800FFAA17 /* LandmarkDetail.swift in Sources */,
+				AF581DEC2C3BD71E00BED03E /* FavoriteButton.swift in Sources */,
 				84FAEF752C3AF8AF00FFAA17 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,7 +519,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pay what/Preview Content\"";
-				DEVELOPMENT_TEAM = UANSY5HQP8;
+				DEVELOPMENT_TEAM = AZTT74NR85;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -507,6 +527,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -528,7 +549,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pay what/Preview Content\"";
-				DEVELOPMENT_TEAM = UANSY5HQP8;
+				DEVELOPMENT_TEAM = AZTT74NR85;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -536,6 +557,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,7 +580,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AZTT74NR85;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Dat-vu.Pay-whatTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -578,7 +600,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AZTT74NR85;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Dat-vu.Pay-whatTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -597,6 +619,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AZTT74NR85;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Dat-vu.Pay-whatUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -615,6 +638,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AZTT74NR85;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Dat-vu.Pay-whatUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -9,15 +9,21 @@ import SwiftUI
 
 struct LandmarkRow: View {
     var landmark: Landmark
+    private let imageSize: CGFloat = 50
+    private let imageCornerRadius: CGFloat = 10
 
     var body: some View {
         HStack {
             landmark.image
                 .resizable()
-                .frame(width: 50, height: 50)
+                .frame(width: imageSize, height: imageSize)
+                .cornerRadius(imageCornerRadius)
             Text(landmark.name)
-
             Spacer()
+            if landmark.isFavorite {
+                Image(systemName: "star.fill")
+                    .foregroundStyle(.yellow)
+            }
         }
     }
 }
@@ -34,7 +40,8 @@ struct LandmarkRow: View {
 
 // v3
 #Preview {
-    Group {
+    let landmarks = ModelData().landmarks
+    return Group {
         LandmarkRow(landmark: landmarks[0])
         LandmarkRow(landmark: landmarks[1])
     }
