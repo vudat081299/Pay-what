@@ -15,7 +15,6 @@
 		84FAEF452C3AA57C00FFAA17 /* Pay_whatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAEF442C3AA57C00FFAA17 /* Pay_whatTests.swift */; };
 		84FAEF4F2C3AA57C00FFAA17 /* Pay_whatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAEF4E2C3AA57C00FFAA17 /* Pay_whatUITests.swift */; };
 		84FAEF512C3AA57C00FFAA17 /* Pay_whatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAEF502C3AA57C00FFAA17 /* Pay_whatUITestsLaunchTests.swift */; };
-		84FAEF5F2C3AAE4000FFAA17 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 84FAEF5E2C3AAE4000FFAA17 /* AlamofireDynamic */; };
 		84FAEF622C3AAEF200FFAA17 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 84FAEF612C3AAEF200FFAA17 /* Then */; };
 		84FAEF652C3AAF2700FFAA17 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 84FAEF642C3AAF2700FFAA17 /* Nuke */; };
 		84FAEF672C3AAF2700FFAA17 /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 84FAEF662C3AAF2700FFAA17 /* NukeExtensions */; };
@@ -35,6 +34,7 @@
 		AF581DF52C3BFDB700BED03E /* BadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF581DF42C3BFDB700BED03E /* BadgeSymbol.swift */; };
 		AF581DF72C3BFDE000BED03E /* RotatedBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF581DF62C3BFDE000BED03E /* RotatedBadgeSymbol.swift */; };
 		AF581DF92C3C02F100BED03E /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF581DF82C3C02F100BED03E /* Badge.swift */; };
+		AFB1430B2C3CEDBA005F1008 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AFB1430A2C3CEDBA005F1008 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,8 +90,8 @@
 				84FAEF692C3AAF2700FFAA17 /* NukeUI in Frameworks */,
 				84FAEF6B2C3AAF2700FFAA17 /* NukeVideo in Frameworks */,
 				84FAEF652C3AAF2700FFAA17 /* Nuke in Frameworks */,
+				AFB1430B2C3CEDBA005F1008 /* Alamofire in Frameworks */,
 				84FAEF672C3AAF2700FFAA17 /* NukeExtensions in Frameworks */,
-				84FAEF5F2C3AAE4000FFAA17 /* AlamofireDynamic in Frameworks */,
 				84FAEF622C3AAEF200FFAA17 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				84FAEF332C3AA57800FFAA17 /* ContentView.swift */,
+				AF581DFA2C3C031000BED03E /* Badge */,
 				AF581DEF2C3BD84E00BED03E /* Helper */,
 				AF581DEE2C3BD7CE00BED03E /* Landmark */,
 			);
@@ -204,7 +205,6 @@
 		AF581DEF2C3BD84E00BED03E /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				AF581DFA2C3C031000BED03E /* Badge */,
 				84FAEF6C2C3AEFF000FFAA17 /* CircleImage.swift */,
 				AF581DEB2C3BD71E00BED03E /* FavoriteButton.swift */,
 				84FAEF6E2C3AF00D00FFAA17 /* MapView.swift */,
@@ -241,12 +241,12 @@
 			);
 			name = "Pay what";
 			packageProductDependencies = (
-				84FAEF5E2C3AAE4000FFAA17 /* AlamofireDynamic */,
 				84FAEF612C3AAEF200FFAA17 /* Then */,
 				84FAEF642C3AAF2700FFAA17 /* Nuke */,
 				84FAEF662C3AAF2700FFAA17 /* NukeExtensions */,
 				84FAEF682C3AAF2700FFAA17 /* NukeUI */,
 				84FAEF6A2C3AAF2700FFAA17 /* NukeVideo */,
+				AFB1430A2C3CEDBA005F1008 /* Alamofire */,
 			);
 			productName = "Pay what";
 			productReference = 84FAEF2E2C3AA57800FFAA17 /* Pay what.app */;
@@ -321,9 +321,9 @@
 			);
 			mainGroup = 84FAEF252C3AA57700FFAA17;
 			packageReferences = (
-				84FAEF5D2C3AAE4000FFAA17 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				84FAEF602C3AAEF200FFAA17 /* XCRemoteSwiftPackageReference "Then" */,
 				84FAEF632C3AAF2700FFAA17 /* XCRemoteSwiftPackageReference "Nuke" */,
+				AFB143092C3CEDBA005F1008 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 84FAEF2F2C3AA57800FFAA17 /* Products */;
 			projectDirPath = "";
@@ -719,14 +719,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		84FAEF5D2C3AAE4000FFAA17 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.9.1;
-			};
-		};
 		84FAEF602C3AAEF200FFAA17 /* XCRemoteSwiftPackageReference "Then" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/Then";
@@ -743,14 +735,17 @@
 				minimumVersion = 12.7.3;
 			};
 		};
+		AFB143092C3CEDBA005F1008 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		84FAEF5E2C3AAE4000FFAA17 /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 84FAEF5D2C3AAE4000FFAA17 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
-		};
 		84FAEF612C3AAEF200FFAA17 /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 84FAEF602C3AAEF200FFAA17 /* XCRemoteSwiftPackageReference "Then" */;
@@ -775,6 +770,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 84FAEF632C3AAF2700FFAA17 /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = NukeVideo;
+		};
+		AFB1430A2C3CEDBA005F1008 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFB143092C3CEDBA005F1008 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

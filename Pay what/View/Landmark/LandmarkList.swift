@@ -60,7 +60,7 @@ struct LandmarkList: View {
 //        }
 //
 //        v6
-        NavigationView {
+        NavigationSplitView {
             List {
                 Toggle(isOn: $showFavoritesOnly) {
                     Text("Favorites only")
@@ -75,6 +75,8 @@ struct LandmarkList: View {
             }
             .animation(.default, value: filteredLandmarks)
             .navigationTitle("Landmarks")
+        } detail: {
+            Text("Select a Landmark")
         }
     }
 }
