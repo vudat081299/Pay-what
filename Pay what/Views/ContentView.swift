@@ -9,11 +9,31 @@ import SwiftUI
 //import SwiftData
 
 struct ContentView: View {
-//    @Environment(\.modelContext) private var modelContext
+    //    @Environment(\.modelContext) private var modelContext
 //    @Query private var items: [Item]
+    @State private var selection: Tab = .featured
+    
+    enum Tab {
+        case featured
+        case list
+    }
 
     var body: some View {
-        LandmarkList()
+        
+        TabView(selection: $selection) {
+            CategoryHome()
+                .tabItem {
+                    Label("Featured", systemImage: "star")
+                }
+                .tag(Tab.featured)
+
+            LandmarkList()
+                .tabItem {
+                    Label("List", systemImage: "list.bullet")
+                }
+                .tag(Tab.list)
+        }
+        
         /*
         VStack {
             MapView()
